@@ -1,0 +1,67 @@
+{
+  "name": "cc-diet",
+  "version": "1.0.0",
+  "description": "Cut Claude Code Turn-1 context bloat by 85%: native SkillSearch, compact skill catalog, subagent skill diet, and universal gateway ToolSearch patcher",
+  "type": "module",
+  "bin": {
+    "cc-diet": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/cli.ts src/index.ts --format esm --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "claude-code",
+    "anthropic",
+    "context-bloat",
+    "token-optimization",
+    "mcp",
+    "skills",
+    "tool-search",
+    "skill-search",
+    "9router",
+    "litellm",
+    "openrouter",
+    "patcher",
+    "cli"
+  ],
+  "author": "Tejas Lamba",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejasLamba2006/cc-diet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TejasLamba2006/cc-diet/issues"
+  },
+  "homepage": "https://github.com/TejasLamba2006/cc-diet#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
