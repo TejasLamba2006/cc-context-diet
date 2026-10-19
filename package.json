@@ -1,10 +1,11 @@
 {
-  "name": "cc-diet",
+  "name": "cc-context-diet",
   "version": "1.0.0",
   "description": "Cut Claude Code Turn-1 context bloat by 85%: native SkillSearch, compact skill catalog, subagent skill diet, and universal gateway ToolSearch patcher",
   "type": "module",
   "bin": {
-    "cc-diet": "./dist/cli.js"
+    "cc-context-diet": "dist/cli.js",
+    "cc-diet": "dist/cli.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -45,12 +46,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TejasLamba2006/cc-diet.git"
+    "url": "git+https://github.com/TejasLamba2006/cc-context-diet.git"
   },
   "bugs": {
-    "url": "https://github.com/TejasLamba2006/cc-diet/issues"
+    "url": "https://github.com/TejasLamba2006/cc-context-diet/issues"
   },
-  "homepage": "https://github.com/TejasLamba2006/cc-diet#readme",
+  "homepage": "https://github.com/TejasLamba2006/cc-context-diet#readme",
   "engines": {
     "node": ">=18.0.0"
   },

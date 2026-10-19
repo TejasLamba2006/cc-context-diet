@@ -1,4 +1,4 @@
-# cc-diet
+# cc-context-diet (`cc-diet`)
 
 Cut Claude Code's Turn-1 context bloat by **80-90%** without deleting or moving a single skill, plugin, or MCP server.
 
@@ -24,18 +24,20 @@ When you boot `@anthropic-ai/claude-code` with plugins (`superpowers`, `oh-my-cl
 
 ```bash
 # 1. Audit your current Turn-1 token bloat
-npx cc-diet audit
+npx cc-context-diet audit
 
 # 2. Apply the patch to claude / claude.exe
-npx cc-diet patch
+npx cc-context-diet patch
 
 # 3. Check status or pin specific skills
-npx cc-diet status
-npx cc-diet pin superpowers:brainstorming
+npx cc-context-diet status
+npx cc-context-diet pin superpowers:brainstorming
 
 # 4. Restore original binary at any time
-npx cc-diet unpatch
+npx cc-context-diet unpatch
 ```
+
+(When installed globally via `npm i -g cc-context-diet`, both `cc-context-diet` and the short alias `cc-diet` are available.)
 
 ## Coexistence with `cc-subagent-models`
 
